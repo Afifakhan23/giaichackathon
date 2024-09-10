@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-color:#a55eea;
+    --secondary-color:#d1d8e0;
+    --white:#fff;
+    --blue:#3B3B98;
+}
+body {
+    font-family: 'Lucida Bright', sans-serif;
+    background-color:var(--secondary-color);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: var(--main-color);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color:black;
+    font-size: 35px;
+}
+
+.section {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 2px solid transparent;
+    transition: border 0.3s;
+}
+
+.section:hover {
+    border: 2px solid var(--secondary-color);
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--blue);
+}
+
+label {
+    margin-top: 10px;
+    display: block;
+    font-size: 18px;
+    color: var(--white);
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #dff9fb;
+    border: 2px solid var(--blue);
+    border-radius: 5px;
+    color: #333;
+    font-size: 1em;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid var(--blue);
+    background-color: var(--white);
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #3B3B98;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #dff9fb;
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.submit-btn, .reset-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #3B3B98;
+    color: var(--white);
+    font-weight: bold;
+    font-size: 18px;
+    transition: background 0.3s;
+}
+
+.submit-btn:hover, .reset-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    color: black;
+}
+
+
+/* Let's Create a resume */
+
+#resume-display {
+    display: none; /* Initially hidden */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+#resume-display h2{
+    font-size: 35px;
+}
+#resume-display h3{
+    font-size: 30px;
+    color: black;
+}
+#resume-display p, ul {
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 10px;
+}
+#resume-display h2{
+    text-align: center;
+}
+
+#resume-display ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+.name:after, .email:after,.degree:after{
+    content:" *";
+    color: red;
+}
